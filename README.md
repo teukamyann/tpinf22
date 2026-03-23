@@ -50,11 +50,6 @@ L'application implémente un cycle **CRUD** (Create, Read, Delete) complet avec 
 
 ---
 
-##  Analyse Critique (CleeRoute)
-
-Le développement via la plateforme **CleeRoute** a permis une compréhension progressive des mécanismes HTTP. Cependant, l'intégration d'outils de débogage natifs et d'une prévisualisation directe des fichiers JSON aurait facilité la résolution des erreurs de chemin rencontrées durant le développement.
-
----
 
 -[TEUKAM YANN]  
 -Matricule :** [24H2556]  
