@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const articleCtrl = require('./article.controller');
+const ctrl = require('./article.controller');
 
-// Affichage et Ajout
-router.get('/', articleCtrl.getArticles);
-router.post('/ajouter', articleCtrl.ajouterArticleForm);
-
-// Suppression (on utilise une route GET pour pouvoir cliquer sur un simple lien)
-router.get('/delete/:id', articleCtrl.deleteArticle);
+router.post('/', ctrl.createArticle);          // Créer
+router.get('/', ctrl.getArticles);            // Lire tout
+router.get('/search', ctrl.search);            // Chercher
+router.get('/:id', ctrl.getArticleById);       // Lire un seul
+router.put('/:id', ctrl.updateArticle);        // Modifier
+router.delete('/:id', ctrl.deleteArticle);     // Supprimer
 
 module.exports = router;
